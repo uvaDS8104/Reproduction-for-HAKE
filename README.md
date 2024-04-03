@@ -45,6 +45,8 @@ bash runs.sh train ModE FB15k-237 0 0 1024 256 1000 9.0 1.0 0.0001 100000 16
 bash runs.sh train ModE YAGO3-10 0 0 1024 256 500 24.0 1.0 0.0002 80000 4
 ```
 
+
+
 ## Visualization
 To plot entity embeddings and relation embeddings shown in the paper, run figures.ipynb after training.
 
@@ -52,19 +54,6 @@ To plot entity embeddings and relation embeddings shown in the paper, run figure
 To reproduce the ablation study part, replace current "models.py" file with modified model file "models1.py" through renaming the "models1.py" as "models.py". This modified python file include a modified HAKE model without the mixture bias term and HAKEm0 model which only include the phase part of the HAKE model and the ModE model that only include modulus part.
 
 Please notice that: After adopting the modified models.py, all the result will be drawn from a setting without mixture-bias term.
-
-### Usage
-
-```
-bash runs.sh {train | valid | test} {ModE | HAKE| HAKEm0} {wn18rr | FB15k-237 | YAGO3-10} <gpu_id> \
-<save_id> <train_batch_size> <negative_sample_size> <hidden_dim> <gamma> <alpha> \
-<learning_rate> <num_train_steps> <test_batch_size> [modulus_weight] [phase_weight]
-```
-- `{ | }`: Mutually exclusive items. Choose one from them.
-- `< >`: Placeholder for which you must supply a value.
-- `[ ]`: Optional items.
-
-**Remark**: `[modulus_weight]` and `[phase_weight]` are available only for the `HAKE` model. 
 
 To reproduce the results of HAKEm0, run the following commands.
 
