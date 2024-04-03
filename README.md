@@ -43,6 +43,7 @@ bash runs.sh train ModE FB15k-237 0 0 1024 256 1000 9.0 1.0 0.0001 100000 16
 
 # YAGO3-10
 bash runs.sh train ModE YAGO3-10 0 0 1024 256 500 24.0 1.0 0.0002 80000 4
+```
 
 ## Visualization
 To plot entity embeddings and relation embeddings shown in the paper, run figures.ipynb after training.
