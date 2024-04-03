@@ -49,9 +49,9 @@ bash runs.sh train ModE YAGO3-10 0 0 1024 256 500 24.0 1.0 0.0002 80000 4
 To plot entity embeddings and relation embeddings shown in the paper, run figures.ipynb after training.
 
 ## Ablation Study
-To reproduce the ablation study part, replace current model.py file with modified model file "model1.py" through renaming the "model1.py" as "model.py". This modified python file include a modified HAKE model without the mixture bias term and HAKEm0 model which only include the phase part of the HAKE model and the ModE model that only include modulus part.
+To reproduce the ablation study part, replace current "models.py" file with modified model file "models1.py" through renaming the "models1.py" as "models.py". This modified python file include a modified HAKE model without the mixture bias term and HAKEm0 model which only include the phase part of the HAKE model and the ModE model that only include modulus part.
 
-Please notice that: After adopting the modified model.py, all the result will be drawn from a setting without mixture-bias term.
+Please notice that: After adopting the modified models.py, all the result will be drawn from a setting without mixture-bias term.
 
 ### Usage
 
