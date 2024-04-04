@@ -1,9 +1,9 @@
 # Reproduction-for-HAKE
-This is MiaYuan's course project
+This is MiaYuan's course project. The original code is from https://github.com/MIRALab-USTC/KGE-HAKE/tree/master. 
 
-## Dependencies
-- Python 3.6+
-- [PyTorch](http://pytorch.org/) 1.0+
+### Contribution: 
+#####The model1.py is a modified model for the purpose of reproducing the results from Ablation Studies and 
+#### figures.ipynb contains codes to reproduce all figures from the paper. Specifically, two visualization function for modulus and phase part of relation embedding, and one visualization function for head entity embedding and tail entity embedding from any triplets.
 
 - ## Running the code 
 
@@ -53,7 +53,7 @@ To plot entity embeddings and relation embeddings shown in the paper, run figure
 ## Ablation Study
 To reproduce the ablation study part, replace current "models.py" file with modified model file "models1.py" through renaming the "models1.py" as "models.py". This modified python file include a modified HAKE model without the mixture bias term and HAKEm0 model which only include the phase part of the HAKE model and the ModE model that only include modulus part.
 
-Please notice that: After adopting the modified models.py, all the result will be drawn from a setting without mixture-bias term.
+Please notice that: After adopting the modified models.py, all the results will be drawn from a setting without mixture-bias term.
 
 To reproduce the results of HAKEm0, run the following commands.
 
@@ -70,5 +70,5 @@ bash runs.sh train HAKEm0 YAGO3-10 0 0 1024 256 500 24.0 1.0 0.0002 180000 4
 ```
 ### Training Results
 
-The training result folder will be stored in the "models" folder, named after "{ModelName}_{Dataset}_{SaveID}". The results will contain a training log txt file, an entity embedding .npy file, a relation embedding .npy file, a checkpoint file and a config.json file.
+The training result folder will be stored in the "models" folder, named after "{ModelName}\_{Dataset}\_{SaveID}". The results will contain a training log txt file, an entity embedding .npy file, a relation embedding .npy file, a checkpoint file and a config.json file.
 All trainin results for this reproduction work can be obtained from here: https://drive.google.com/drive/folders/1--T3NalcoHRuPWlALrLfvh_PSf5PiEr1?usp=drive_link
