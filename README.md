@@ -2,7 +2,7 @@
 This is MiaYuan's course project. The original code is from https://github.com/MIRALab-USTC/KGE-HAKE/tree/master. 
 
 ### These parts are done by myself (please use them with caution!):
-#### 1. The model1.py is a modified model for the purpose of reproducing the results from Ablation Studies;
+#### 1. The model1.py is a modified model for the purpose of reproducing the results from Ablation Studies, which leave out the mixture-bias term in the original model and includes a modifified model HAKEm0 with only phase part of the original model; all the results from running this code will not contain the mixture-bias term in the model.
 #### 2. figures.ipynb contains codes to reproduce all figures from the paper. Specifically, two visualization functions for modulus and phase part of relation embedding, and one visualization function for head entity embedding and tail entity embedding from any triplets.
 
 - ## Running the code 
