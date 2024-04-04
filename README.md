@@ -68,3 +68,7 @@ bash runs.sh train HAKEm0 FB15k-237 0 0 1024 256 1000 9.0 1.0 0.00005 100000 16
 # YAGO3-10
 bash runs.sh train HAKEm0 YAGO3-10 0 0 1024 256 500 24.0 1.0 0.0002 180000 4 
 ```
+### Training Results
+
+The training result folder will be stored in the "models" folder, named after "{ModelName}_{Dataset}_{SaveID}". The results will contain a training log txt file, an entity embedding .npy file, a relation embedding .npy file, a checkpoint file and a config.json file.
+All trainin results for this reproduction work can be obtained from here: https://drive.google.com/drive/folders/1--T3NalcoHRuPWlALrLfvh_PSf5PiEr1?usp=drive_link
