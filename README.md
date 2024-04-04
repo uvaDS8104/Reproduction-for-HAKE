@@ -1,7 +1,7 @@
 # Reproduction-for-HAKE
 This is MiaYuan's course project. The original code is from https://github.com/MIRALab-USTC/KGE-HAKE/tree/master. 
 
-### These part are done by myself (please use them with caution!):
+### These parts are done by myself (please use them with caution!):
 #### 1. The model1.py is a modified model for the purpose of reproducing the results from Ablation Studies;
 #### 2. figures.ipynb contains codes to reproduce all figures from the paper. Specifically, two visualization functions for modulus and phase part of relation embedding, and one visualization function for head entity embedding and tail entity embedding from any triplets.
 
